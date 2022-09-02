@@ -1,0 +1,29 @@
+:root {
+    scroll-behavior: smooth;
+    --primary-theme-color: #e8e4e4;
+    --secondary-theme-color: #020303;
+    --tertiary-theme-color: #BE1818;
+    --primary-text-color: #020303;
+    --secondary-text-color: #fff;
+    --tertiary-text-color: #BE1818;
+    --primary-shadow-color: #42464f80;
+    --secondary-shadow-color: #0002;
+    --primary-highlight-color: #FFE900;
+    --primary-font-family: 'Roboto';
+    --reverse-primary-shadow-color: #42464f;
+    --primary-button-color: #BE1818;
+    --secondary-button-color: #fff;
+    --padding-section: 2rem;
+    --padding-container: 1rem;
+    --max-width-form: 480px;
+    --max-width-container: 480px;
+    --primary-border-radius: 0.75rem;
+}
+
+@media (min-width: 768px) {
+    :root {
+        --padding-section: 2rem;
+        --padding-container: 0.75rem;
+        --max-width-container: 1024px;
+    }
+}

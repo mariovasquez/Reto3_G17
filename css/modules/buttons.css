@@ -1,0 +1,39 @@
+.button{
+    display: inline-block;
+    font-family: var(--primary-font-family);
+    font-size: 1rem;
+    font-weight: 900;
+    cursor: pointer;
+    padding: 0.25em 1em;
+    text-decoration: none;
+}
+
+.button--primary {
+    background-color: var(--primary-button-color);
+    border: 0.0625rem solid var(--primary-button-color);
+    color: var(--secondary-text-color);
+    transition: all 0.25s;
+}
+
+.button--hero{
+    border-radius: var(--primary-border-radius);
+    box-shadow: 0 0 0.25rem 0rem var(--primary-text-color);
+    animation: scaleElement 3s infinite;
+    transition: all 0.25s;
+}
+
+.button--hero:hover{
+    transform: scale(1.25);
+    animation: none;
+}
+
+.button--primary:hover {
+    color: var(--secondary-text-color);
+    filter: brightness(125%);
+}
+
+@media(min-width: 768px){
+    .button{
+        font-size: 1.125rem;
+    }
+}
