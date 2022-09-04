@@ -1,6 +1,14 @@
 .body {
-    background-color: var(--primary-theme-color);
-    color: var(--primary-text-color);
-    font-family: var(--primary-font-family);
-    margin: 0;
+  background-color: var(--primary-theme-color);
+  color: var(--primary-text-color);
+  font-family: var(--primary-font-family);
+  margin: 0;
 }
+.body--dark {
+  --tertiary-theme-color: #FF0039;
+  --primary-theme-color: #08080B;
+  --secondary-theme-color: #1F222B;
+  --primary-text-color: #fff;
+}
+
+/*# sourceMappingURL=index.css.map */

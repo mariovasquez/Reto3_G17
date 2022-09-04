@@ -1,5 +1,6 @@
 .section{
     padding: var(--padding-section) 0;
+    background-color: var(--primary-theme-color);
     
     &--about{
         display: flex;
@@ -36,7 +37,7 @@
         margin-top: 4.5rem;
         display: flex;
         flex-direction: column;
-        background-color: var(--secondary-text-color);
+        background-color: var(--secondary-theme-color);
         align-items: center;
         justify-content: center;
         justify-content: space-between;

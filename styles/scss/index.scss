@@ -3,4 +3,11 @@
     color: var(--primary-text-color);
     font-family: var(--primary-font-family);
     margin: 0;
+
+    &--dark{
+        --tertiary-theme-color: #FF0039;
+        --primary-theme-color: #08080B;
+        --secondary-theme-color: #1F222B;
+        --primary-text-color: #fff;
+    }
 }

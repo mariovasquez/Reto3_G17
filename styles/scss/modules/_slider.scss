@@ -28,14 +28,14 @@
             padding: 1rem 2rem;
             border-radius: 4px;
             font-weight: 500;
-            background: #FF0039;
+            background: var(--tertiary-theme-color);
             color: white;
             font-size: 1.25rem;
-            border: 1px solid #FF0039;
+            border: 1px solid var(--tertiary-theme-color);
     
             &:hover {
                 background: white;
-                color: #FF0039;
+                color: var(--tertiary-theme-color);
                 border: 1px solid white
             }
         }
@@ -53,9 +53,9 @@
             text-align:center;
     
             &:hover {
-                background: #FF0039;
+                background: var(--tertiary-theme-color);
                 color: white;
-                border: 1px solid #FF0039;
+                border: 1px solid var(--tertiary-theme-color);
             }
         }
     }
