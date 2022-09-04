@@ -1,0 +1,94 @@
+.footer {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        background-color: var(--secondary-theme-color);
+        color: var(--secondary-text-color);
+        font-family: var(--primary-font-family);
+        width: 100%;
+    }
+    
+    &__column {
+        float: left;
+    }
+    
+    &__icon {
+        background-color: var(--primary-button-color);
+        border-radius: 0.5rem 1rem;
+        padding: 0.50rem;
+        margin: 0.5rem;
+        transition: all 0.25s;
+
+        &:hover {
+            background-color: var(--secondary-button-color);
+            cursor: pointer;
+            color: var(--primary-button-color);
+        }
+    }
+    
+    &__link-icon {
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: var(--primary-font-family);
+        list-style: none;
+        gap: 2rem;
+    }
+
+    &__subtitle {
+        text-align: center;
+        color: var(--secondary-text-color);
+        font-family: var(--primary-font-family);
+        align-items: center;
+        font-size: 1rem;
+
+        &-link {
+            color: var(--primary-highlight-color);
+            text-decoration: none;
+            transition: all 0.25s;
+        }
+        
+        &-link:hover {
+            color: var(--primary-text-color);
+        }
+    }
+}
+
+.sub__footer {
+    background-color: var(--tertiary-theme-color);
+    padding: 0.250rem;
+    display: flex;
+    justify-content: center;
+}
+
+@media(min-width: 768px){
+    
+    .footer{
+        &__row{
+            flex-direction: row;
+        }
+
+        &__column{
+            &-left {
+                width: 340px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            &-middle {
+                width: 340px;
+            }
+            
+            &-right {
+                width: 340px;
+            }
+        }
+    }
+}
