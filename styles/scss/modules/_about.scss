@@ -1,62 +1,68 @@
-.about__info{
-    max-width: var(--max-width-container);
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--secondary-text-color);
-    padding: 2rem 0;
-    gap: 1rem;
-}
-.about__title{
-    font-size: 1.5rem;
-}
-.about__subtitle{
-    font-size: 1.125rem;
-}
-.about__text{
-    margin: 0;
-    padding: 1rem;
-    max-width: 100%;
-    text-align: justify;
-}
-.about__img{
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
-}
+.about{
+    &__info{
+        max-width: var(--max-width-container);
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--secondary-text-color);
+        padding: 2rem 0;
+        gap: 1rem;
+    }
+    &__title{
+        font-size: 1.5rem;
+    }
+    &__subtitle{
+        font-size: 1.125rem;
+    }
+    &__text{
+        margin: 0;
+        padding: 1rem;
+        max-width: 100%;
+        text-align: justify;
+    }
+    &__img{
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
 
-.about__img--cambio-d{
-    display:none;
-}
-
-.about__paragraph{
-    max-width: 100%;
+        &--cambio-d{
+            display:none;
+        }
+    }
+    
+    &__paragraph{
+        max-width: 100%;
+    }
 }
 
 @media(min-width:768px){
 
-    .about__title{
-        font-size: 2rem;
-    }
-    .about__subtitle{
-        font-size: 1.5rem;
-    }
-
-    .about__text{
-        max-width: var(--max-width-form);
-    }
-    .about__img{
-        max-width: 480px;
+    .about{
+        &__title{
+            font-size: 2rem;
+        }
+        &__subtitle{
+            font-size: 1.5rem;
+        }
+    
+        &__text{
+            max-width: var(--max-width-form);
+        }
+        &__img{
+            max-width: 480px;
+        }
     }
     
 }
 
 @media(min-width:1008px){
-    .about__img--cambio-d{
-        display:block;
-    }
-    .about__img--cambio-m{
-        display:none;
+    .about__img--cambio{
+        &-d{
+            display:block;
+        }
+        &-m{
+            display:none;
+        }
     }
 }
