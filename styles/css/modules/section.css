@@ -11,7 +11,7 @@
     padding-top: calc(6.5rem + var(--padding-section));
     padding-bottom: var(--padding-section);
     min-height: 70vh;
-    background-image: url('../../img/background.webp') ;
+    background-image: url('../../../assets/img/background.webp') ;
     gap: 2rem;
 }
 
