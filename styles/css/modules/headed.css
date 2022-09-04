@@ -1,11 +1,15 @@
 .header {
-    background-color: black;
     position: fixed;
     z-index: 25;
     top: 0;
     left: 0;
     font-size: 20px;
     width: 100%;
+    background-color: none;
+}
+
+.header--scroll {
+    background-color: #FF0039;
 }
 
 .nav {
