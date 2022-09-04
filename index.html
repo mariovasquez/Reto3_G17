@@ -5,24 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/css/index.css" />
-    <link rel="stylesheet" href="./styles/css/library.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="./styles/css/library.css" />
 
     <!-- Primary Meta Tags -->
-    <title>Tienda de Discos</title>
-    <meta name="title" content="Tienda de Discos">
+    <title>Vao Music</title>
+    <meta name="title" content="Vao Music">
     <meta name="description" content="La mejor selección de música.
     Disfruta de tus artistas favoritos como nunca antes.">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://metatags.io/">
-    <meta property="og:title" content="Tienda de Discos">
+    <meta property="og:title" content="Vao Music">
     <meta property="og:description" content="La mejor selección de música.
     Disfruta de tus artistas favoritos como nunca antes.">
     <meta property="og:image" content="https://i.postimg.cc/j2BPNKr6/web.png">
@@ -30,19 +31,17 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://metatags.io/">
-    <meta property="twitter:title" content="Tienda de Discos">
+    <meta property="twitter:title" content="Vao Music">
     <meta property="twitter:description" content="La mejor selección de música.
     Disfruta de tus artistas favoritos como nunca antes.">
     <meta property="twitter:image" content="https://i.postimg.cc/j2BPNKr6/web.png">
-    <title>Tienda de Discos</title>
 </head>
 <body class="body">
     <header class="header">
         <nav class="nav" id="nav">
             <div class="container container--nav-r">
                 <a href="#">
-                    <img src="https://previews.123rf.com/images/khabarushka/khabarushka1803/khabarushka180300859/98204952-guital-tambor-viol%C3%ADn-etiqueta-de-logotipo-de-tienda-de-tienda-de-m%C3%BAsica-conjunto-de-instrumentos-mus.jpg"
-                        alt="Concierto" width="100" height="100" class="nav__logo">
+                    <img src="./assets/svg/Logo_Vao.svg" alt="Concierto" width="100" height="100" class="nav__logo">
                 </a>
                 <a href="#nav" class="nav__action nav__action--menu"><i class="bi bi-list"></i></a>
                 <a href="#close" class="nav__action nav__action--close"><i class="bi bi-x-circle"></i></i></a>
@@ -51,19 +50,16 @@
                         <a href="#" class="menu__link">Inicio</a>
                     </li>
                     <li>
+                        <a href="./pages/about.html" class="menu__link">Sobre nosotros</a>
+                    </li>
+                    <li>
                         <a href="#new" class="menu__link">Articulos</a>
                     </li>
                     <li>
                         <a href="#" class="menu__link">Exclusivos</a>
                     </li>
                     <li>
-                        <a href="#" class="menu__link">Conciertos</a>
-                    </li>
-                    <li>
                         <a href="#" class="menu__link">Grupos</a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav__action"><i class="bi bi-zoom-out"></i></a>
                     </li>
                     <button class="switch active" id="switch">
                         <span class="nav_span"><i class="bi bi-brightness-high"></i></span>
@@ -74,31 +70,58 @@
             </div>
     </header>
     <main>
-        <article class="section section--hero">
-            <div class="container container--hero">
-                <div>
-                            <h1 class="hero__title">La mejor selección de música</h1>
-                            <p class="hero__paragraph">Disfruta de tus artistas favoritos como nunca antes.</p>
-                            <a href="#new" class="button button--primary button--hero">Adelante</a>
+        <section>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                <div class="hero-img">
-                    <img src="https://media.vogue.es/photos/5cc76a54a6e117b66154e666/master/w_1600%2Cc_limit/las_mejores_tiendas_de_discos_del_mundo_9757.jpg" alt="Tienda de discos" class="hero-img__img"/>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/img/Baterista_Slider.jpg" class="d-block w-100" alt="baterista">
+                    <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+                        <h5 class="slider__title">POST MALONE</h5>
+                        <h5 class="slider__title">TWELVE CARAT TOOTHACHE</h5>
+                      <div class="slider__buttons">
+                        <button class="slider__button-text">COMPRAR</button>
+                        <button class="slider__button-icon"><i class="bi bi-star slider__icon"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/img/Artik_Monkeys_Slider.jpg" class="d-block w-100" alt="artik_monkeys">
+                    <div class="carousel-caption d-flex flex-column justify-content-center h-100 ">
+                        <h5 class="slider__title">NUEVO ALBUM</h5>
+                        <h5 class="slider__title">ARTIC MONKEYS</h5>
+                        <div class="slider__buttons">
+                          <button class="slider__button-text">COMPRAR</button>
+                          <button class="slider__button-icon"><i class="bi bi-star slider__icon"></i></button>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/img/Imagine_Dragon_Slider.jpg" class="d-block w-100 slider__filter" alt="imagine_dragons">
+                    <div class="carousel-caption d-flex flex-column justify-content-center h-100 ">
+                        <h5 class="slider__title">IMAGINE DRAGONS</h5>
+                        <h5 class="slider__title">ORIGINS</h5>
+                        <div class="slider__buttons">
+                          <button class="slider__button-text">COMPRAR</button>
+                          <button class="slider__button-icon"><i class="bi bi-star slider__icon"></i></button>
+                        </div>
+                    </div>
+                  </div>
                 </div>
-            </div>
-        </article>
-        <nav>
-            <div class="container container--submenu">
-                <a href="./About/index.html" class="card card--hero">
-                    <h2 class="card__title">Sobre Nosotros</h2>
-                </a>
-                <a href="#new" class="card card--hero">
-                    <h2 class="card__title">Nuevos Lanzamientos</h2>
-                </a>
-                <a href="#preorders" class="card card--hero">
-                    <h2 class="card__title">Pre Órdenes</h2>
-                </a>
-            </div>
-        </nav>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
         <section class="section" id="new">
             <div class="container container--cards">
                 <div class="card card--main card--main-new">
@@ -240,7 +263,7 @@
             <div class="footer__column footer__column-left">
                 <figure>
                     <a href="#">
-                        <img src="./assets/svg/logo_discos-01.svg" width="96px" alt="logo_discos">
+                        <img src="./assets/svg/Logo_Vao_Texto.svg" width="96px" alt="logo_discos">
                     </a>
                 </figure>
             </div>
@@ -289,6 +312,7 @@
             </h2>
         </div>
     </footer>
-    <script src="./index.js"></script>
+    <script src="./js/index.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
