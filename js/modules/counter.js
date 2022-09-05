@@ -6,10 +6,9 @@ const counter = () => {
         const scrollY = document.documentElement.scrollY;
         for(const contador of contadores){
             let heightElement = contador.getBoundingClientRect().top;
-            console.log(heightElement);
             let sizeWindow = window.innerHeight * 0.7;
-            console.log(sizeWindow);
             if(heightElement < sizeWindow){
+                contador.style.opacity = 1;
                 const animateCounter = () => {
                     let maxNumber = +contador.dataset.maxNumber;
                     let currentNumber = +contador.innerText;
@@ -17,7 +16,7 @@ const counter = () => {
             
                     if(currentNumber < maxNumber){
                         contador.innerText = Math.ceil((currentNumber) + increase);
-                        setTimeout(animateCounter, 100);
+                        setTimeout(animateCounter, 300);
                     }else{
                         contador.innerText = maxNumber;
                     }

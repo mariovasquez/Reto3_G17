@@ -61,6 +61,19 @@
     }
 }
 
+@media (max-width: 900px) {
+
+    .slider{
+        &__buttons {
+            scale: 0.9;
+        }
+    
+        &__title {
+            font-size: 2rem;
+        }
+    }
+}
+
 @media (max-width: 768px) {
 
     .slider{

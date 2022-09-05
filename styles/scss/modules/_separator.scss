@@ -1,5 +1,5 @@
 .separator {
-    background-image: url'../../../assets/img/Statistics.jpg';
+    background-image: url('../../../assets/img/Statistics.jpg');
     
     &__container {
         padding: 2rem;
@@ -45,6 +45,11 @@
             color: var(--tertiary-theme-color);
         }
     }
+}
+
+.counter{
+    opacity: 0;
+    transition: all 0.5s;
 }
 
 .counter {

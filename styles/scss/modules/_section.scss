@@ -17,8 +17,7 @@
     padding-right: var(--padding-container);
 
     &--nav-r {
-        display: grid;
-        grid-template-columns: auto auto;
+        display: flex;
         align-items: center;
         justify-content: space-between;
     }

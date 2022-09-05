@@ -43,8 +43,9 @@
                 <a href="#">
                     <img src="./assets/svg/Logo_Vao.svg" alt="Concierto" width="100" height="100" class="nav__logo">
                 </a>
-                <a href="#nav" class="nav__action nav__action--menu"><i class="bi bi-list nav__icon"></i></a>
-                <a href="#close" class="nav__action nav__action--close"><i class="bi bi-x nav__icon"></i></i></a>
+                <button class="nav__action nav__action--menu" id="navActionMenu">
+                    <i class="bi bi-list nav__icon"></i>
+                </button>
                 <ul class="menu menu--header">
                     <li>
                         <a href="#" class="menu__link">Inicio</a>
@@ -65,7 +66,13 @@
                         <span class="nav_span"><i class="bi bi-brightness-high"></i></span>
                         <span class="nav_span"><i class="bi bi-moon-stars"></i></span>
                     </button>
+                    <li class="nav__action nav__action--close" id="navActionClose">
+                        <i class="bi bi-x-circle"></i>
+                    </li>
                 </ul>
+                <button class="nav__action nav__action--search">
+                    <i class="bi bi-search"></i>
+                </button>
             </nav>
             </div>
     </header>
