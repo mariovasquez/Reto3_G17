@@ -20,6 +20,11 @@
     --primary-border-radius: 0.75rem;
 }
 
+.counter{
+    // opacity: 0;
+    // transition: all 0.25s;
+}
+
 @media (min-width: 768px) {
     :root {
         --padding-section: 2rem;
