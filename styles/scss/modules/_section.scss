@@ -10,7 +10,7 @@
     }
 
     &__featured{
-        padding: 4rem 0;
+        padding: 0;
         background-color: var(--primary-theme-color);
 
         &-titles{
@@ -125,6 +125,7 @@
 
     .section{
         &__featured{
+            padding: 4rem 0;
             &-titles{
                 gap: 2rem;
             }

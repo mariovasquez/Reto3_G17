@@ -614,7 +614,7 @@
   align-items: center;
 }
 .section__featured {
-  padding: 4rem 0;
+  padding: 0;
   background-color: var(--primary-theme-color);
 }
 .section__featured-titles {
@@ -712,6 +712,9 @@
 }
 
 @media (min-width: 850px) {
+  .section__featured {
+    padding: 4rem 0;
+  }
   .section__featured-titles {
     gap: 2rem;
   }
