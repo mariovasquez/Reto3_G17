@@ -24,12 +24,14 @@
 
         &-title{
             position: relative;
-            color: var(--primary-text-color);
+            color: var(--primary-shadow-color);
             font-size: 1.25rem;
             font-weight: 600;
             cursor: pointer;
     
             &--selected{
+                color: var(--primary-text-color);
+
                 &::before{
                     content: "";
                     position: absolute;
