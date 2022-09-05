@@ -61,15 +61,20 @@
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 940px) {
 
     .slider{
-        &__buttons {
-            scale: 0.9;
-        }
     
         &__title {
             font-size: 2rem;
+        }
+
+        &__button{
+            scale: 0.9;
+
+            &:hover {
+                scale: 0.9;
+            }
         }
     }
 }
@@ -77,13 +82,18 @@
 @media (max-width: 768px) {
 
     .slider{
-        &__buttons {
-            scale: 0.75;
-        }
     
         &__title {
             font-size: 1rem;
             top: 75%;
+        }
+
+        &__button{
+            scale: 0.9;
+
+            &:hover {
+                scale: 0.9;
+            }
         }
     }
 }

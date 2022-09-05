@@ -30,11 +30,11 @@
         display: flex;
         text-decoration: none;
         color: #fff;
-        transition: color 1s;
-        transition: transform 0.25s;
         font-weight: 500;
         font-size: 1.25rem;
         text-shadow: 0 0 0.25rem var(--tertiary-theme-color);
+        transition: color 0.25s;
+        transition: transform 0.25s;
 
         &:hover {
             color: #fff;
@@ -62,7 +62,7 @@
     color: white;
 }
 
-@media(min-width: 900px){
+@media(min-width: 940px){
     .menu{
         position: static;
         width: auto;

@@ -156,6 +156,16 @@
   color: var(--tertiary-theme-color);
   border: 1px solid white;
 }
+.button-text--buy {
+  color: var(--tertiary-text-color);
+  font-weight: 600;
+  transition: background-color 0.35s, color 0.35s, border 0.35s;
+}
+.button-text--buy:hover {
+  background-color: var(--quaternary-theme-color);
+  color: var(--tertiary-text-color);
+  border: 1px solid var(--primary-text-color);
+}
 .button-input {
   padding: 0.5rem;
   border-radius: 4px;
@@ -184,6 +194,20 @@
 @media (min-width: 768px) {
   .button {
     font-size: 1.125rem;
+  }
+  .button-text--buy {
+    color: var(--tertiary-text-color);
+    font-weight: 600;
+    visibility: hidden;
+  }
+  .button-text--buy:hover {
+    background: var(--quaternary-theme-color);
+    color: var(--tertiary-text-color);
+    border: 1px solid var(--primary-text-color);
+  }
+  .button-text--buy--enable {
+    visibility: visible;
+    transition: all 1s;
   }
 }
 .card {
@@ -465,7 +489,7 @@
   transform: scale(0);
 }
 
-@media (min-width: 900px) {
+@media (min-width: 940px) {
   .nav {
     --scale-menu: scale(0);
     --translate-x-menu: translateX(0);
@@ -563,11 +587,11 @@
   display: flex;
   text-decoration: none;
   color: #fff;
-  transition: color 1s;
-  transition: transform 0.25s;
   font-weight: 500;
   font-size: 1.25rem;
   text-shadow: 0 0 0.25rem var(--tertiary-theme-color);
+  transition: color 0.25s;
+  transition: transform 0.25s;
 }
 .menu__link:hover {
   color: #fff;
@@ -591,7 +615,7 @@
   color: white;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 940px) {
   .menu {
     position: static;
     width: auto;
@@ -631,8 +655,13 @@
   font-size: 1.25rem;
   font-weight: 600;
   cursor: pointer;
+  transition: all 0.25s;
+}
+.section__featured-title:hover {
+  text-shadow: 0 0 0.125rem var(--primary-shadow-color);
 }
 .section__featured-title--selected {
+  position: relative;
   color: var(--primary-text-color);
 }
 .section__featured-title--selected::before {
@@ -649,21 +678,37 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  gap: 2rem;
+  gap: 0.5rem;
   padding: 2rem 0;
 }
 .section__featured-albums--disabled {
   display: none;
 }
-.section__featured-album {
+.section__featured-album-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   gap: 0.5rem;
+  padding: 1rem 0rem;
+}
+.section__featured-album-link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: var(--primary-text-color);
+  gap: 0.625rem;
+}
+.section__featured-album-link:hover {
+  color: var(--primary-text-color);
 }
 .section__featured-album-img {
   border-radius: 10%;
-  box-shadow: 0 0 0.25rem 0 black;
+  box-shadow: 0 0 0.25rem 0 var(--primary-shadow-color);
+  transition: box-shadow 0.25s;
+}
+.section__featured-album-img--hover {
+  box-shadow: 0 0 0.25rem 0.2rem var(--primary-highlight-color);
 }
 .section__featured-album-artist {
   margin: 0;
@@ -723,6 +768,13 @@
   }
   .section__featured-albums {
     flex-direction: row;
+    gap: 2rem;
+  }
+  .section__featured-album-link {
+    gap: 1rem;
+  }
+  .section__featured-album-container {
+    padding: 2rem 2rem;
   }
   .container--hero {
     flex-direction: row;
@@ -789,21 +841,27 @@
   border: 1px solid var(--tertiary-theme-color);
 }
 
-@media (max-width: 900px) {
-  .slider__buttons {
-    scale: 0.9;
-  }
+@media (max-width: 940px) {
   .slider__title {
     font-size: 2rem;
   }
+  .slider__button {
+    scale: 0.9;
+  }
+  .slider__button:hover {
+    scale: 0.9;
+  }
 }
 @media (max-width: 768px) {
-  .slider__buttons {
-    scale: 0.75;
-  }
   .slider__title {
     font-size: 1rem;
     top: 75%;
+  }
+  .slider__button {
+    scale: 0.9;
+  }
+  .slider__button:hover {
+    scale: 0.9;
   }
 }
 .switch {
@@ -854,12 +912,13 @@
   scroll-behavior: smooth;
   --primary-theme-color: #fff;
   --tertiary-theme-color: #0147EC;
+  --quaternary-theme-color: #0547e0b6;
   --primary-text-color: #020303;
   --secondary-text-color: #1F222B;
   --tertiary-text-color: #fff;
   --primary-shadow-color: #605f5fe0;
   --secondary-shadow-color: #0002;
-  --primary-highlight-color: #FFE900;
+  --primary-highlight-color: #00e5ff;
   --primary-font-family: "Roboto";
   --reverse-primary-shadow-color: #42464f;
   --primary-button-color: #BE1818;
