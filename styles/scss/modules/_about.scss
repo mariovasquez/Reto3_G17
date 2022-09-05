@@ -5,12 +5,24 @@
         flex-flow: row wrap;
         align-items: center;
         justify-content: center;
-        background-color: var(--secondary-text-color);
-        padding: 2rem 0;
+        background-color: var(--primary-theme-color);
+        padding: 1rem 0;
         gap: 1rem;
     }
     &__title{
         font-size: 1.5rem;
+        position: relative;
+
+        &::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -0.5rem;
+            width: 100%;
+            height: 0.325rem;
+            background-color: var(--tertiary-theme-color);
+            transition: all 0.25s ease-in-out;
+        }
     }
     &__subtitle{
         font-size: 1.125rem;

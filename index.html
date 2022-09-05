@@ -11,6 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="./styles/css/library.css" />
 
@@ -48,19 +49,19 @@
                 </button>
                 <ul class="menu menu--header">
                     <li>
-                        <a href="#" class="menu__link">Inicio</a>
+                        <a href="#" class="menu__link">INICIO</a>
                     </li>
                     <li>
-                        <a href="./pages/about.html" class="menu__link">Sobre nosotros</a>
+                        <a href="./pages/about/about.html" class="menu__link">SOBRE NOSOTROS</a>
                     </li>
                     <li>
-                        <a href="#new" class="menu__link">Articulos</a>
+                        <a href="#" class="menu__link">ARTÍCULOS</a>
                     </li>
                     <li>
-                        <a href="#" class="menu__link">Exclusivos</a>
+                        <a href="#" class="menu__link">EXCLUSIVOS</a>
                     </li>
                     <li>
-                        <a href="#" class="menu__link">Grupos</a>
+                        <a href="#" class="menu__link">GRUPOS</a>
                     </li>
                     <button class="switch active" id="switch">
                         <span class="nav_span"><i class="bi bi-brightness-high"></i></span>
@@ -129,136 +130,54 @@
                 </button>
               </div>
         </section>
-        <section class="section" id="new">
-            <div class="container container--cards">
-                <div class="card card--main card--main-new">
-                    <div>
-                        <h2 class="card__title">Nuevos Lanzamientos</h2>
+        <section class="section section__featured">
+            <div class="container container--featured">
+                <div class="section__featured-titles">
+                    <h2 class="section__featured-title section__featured-title--selected" id="newReleases">Nuevos Lanzamientos</h2>
+                    <h2 class="section__featured-title" id="popular">Tendencias</h2>
+                </div>
+                <div class="section__featured-albums" data-aos="flip-up" id="newReleasesAlbums">
+                    <div class="section__featured-album">
+                        <img src="https://cdn.shopify.com/s/files/1/0096/1884/9839/products/MarsVolta_1099dc09-7682-4ffe-bd7a-768052bc3de7_480x.jpg?v=1660897472" alt="" width="175" height="175" class="section__featured-album-img"/>
+                        <h3 class="section__featured-album-artist">The Mars Volta</h3>
+                        <p class="section__featured-album-title">The Mars Volta</p>
+                    </div>
+                    <div class="section__featured-album">
+                        <img src="https://cdn.shopify.com/s/files/1/0096/1884/9839/products/oasis20000000170887_2_480x.jpg?v=1657700137" alt="" width="175" height="175" class="section__featured-album-img"/>
+                        <h3 class="section__featured-album-artist">Oasis</h3>
+                        <p class="section__featured-album-title">Be Here Now</p>
+                    </div>
+                    <div class="section__featured-album">
+                        <img src="https://cdn.shopify.com/s/files/1/0096/1884/9839/products/Parachutes-1593635064_480x.jpg?v=1594732369" alt="" width="175" height="175" class="section__featured-album-img"/>
+                        <h3 class="section__featured-album-artist">Coldplay</h3>
+                        <p class="section__featured-album-title">Parachutes</p>
+                    </div>
+                    <div class="section__featured-album">
+                        <img src="https://cdn.shopify.com/s/files/1/0096/1884/9839/products/Keane_Strangeland_360x.jpg?v=1654791292" alt="" width="175" height="175" class="section__featured-album-img"/>
+                        <h3 class="section__featured-album-artist">Keane</h3>
+                        <p class="section__featured-album-title">Strangeland</p>
                     </div>
                 </div>
-                <div class="container container--card">
-                    <div class="card card--album card--album-uneven">
-                        <div class="card__img">
-                            <img src="https://cdn.shopify.com/s/files/1/0096/1884/9839/products/MarsVolta_1099dc09-7682-4ffe-bd7a-768052bc3de7_480x.jpg?v=1660897472" alt="" width="175" height="175"/>
-                        </div>
-                        <div class="card__album">
-                            The Mars Volta
-                        </div>
-                        <div class="card__artist">
-                            The Mars Volta
-                        </div>
-                        <div class="card__price">
-                            $24.99
-                        </div>
+                <div class="section__featured-albums section__featured-albums--disabled" data-aos="flip-up" id="popularAlbums">
+                    <div class="section__featured-album">
+                        <img src="https://cdn.shopify.com/s/files/1/0096/1884/9839/products/MUS000356486_480x.jpg?v=1612541904" alt="" width="175" height="175" class="section__featured-album-img"/>
+                        <h3 class="section__featured-album-artist">Blur</h3>
+                        <p class="section__featured-album-title">Blur</p>
                     </div>
-                    <div class="card card--album card--album-even">
-                        <div class="card__img">
-                            <img src="https://cdn.shopify.com/s/files/1/0096/1884/9839/products/oasis20000000170887_2_480x.jpg?v=1657700137" alt="" width="175" height="175"/>
-                        </div>
-                        <div class="card__album">
-                            Be Here Now
-                        </div>
-                        <div class="card__artist">
-                            Oasis
-                        </div>
-                        <div class="card__price">
-                            $32.99
-                        </div>
+                    <div class="section__featured-album">
+                        <img src="https://cdn.shopify.com/s/files/1/0096/1884/9839/products/Interpol-Turn-On-The-Bright-Lights-Sister-Ray_480x.jpg?v=1570374761" alt="" width="175" height="175" class="section__featured-album-img"/>
+                        <h3 class="section__featured-album-artist">Interpol</h3>
+                        <p class="section__featured-album-title">Turn On The Bright Lights</p>
                     </div>
-                    <div class="card card--album card--album-uneven">
-                        <div class="card__img">
-                            <img src="https://cdn.shopify.com/s/files/1/0096/1884/9839/products/Parachutes-1593635064_480x.jpg?v=1594732369" alt="" width="175" height="175"/>
-                        </div>
-                        <div class="card__album">
-                            Parachutes
-                        </div>
-                        <div class="card__artist">
-                            Coldplay
-                        </div>
-                        <div class="card__price">
-                            $22.99
-                        </div>
+                    <div class="section__featured-album">
+                        <img src="https://cdn.shopify.com/s/files/1/0096/1884/9839/products/room_480x.jpg?v=1632999315" alt="" width="175" height="175" class="section__featured-album-img"/>
+                        <h3 class="section__featured-album-artist">The Strokes</h3>
+                        <p class="section__featured-album-title">Room On Fire</p>
                     </div>
-                    <div class="card card--album card--album-even">
-                        <div class="card__img">
-                            <img src="https://cdn.shopify.com/s/files/1/0096/1884/9839/products/Keane_Strangeland_360x.jpg?v=1654791292" alt="" width="175" height="175"/>
-                        </div>
-                        <div class="card__album">
-                            Strangeland
-                        </div>
-                        <div class="card__artist">
-                            Keane
-                        </div>
-                        <div class="card__price">
-                            $19.99
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section" id="preorders">
-            <div class="container container--cards">
-                <div class="card card--main card--main-preorder">
-                    <div>
-                        <h2 class="card__title">Pre-órdenes</h2>
-                    </div>
-                </div>
-                <div class="container container--card">
-                    <div class="card card--album">
-                        <div class="card__img">
-                            <img src="https://cdn.shopify.com/s/files/1/0096/1884/9839/products/MUS000356486_480x.jpg?v=1612541904" alt="" width="175" height="175"/>
-                        </div>
-                        <div class="card__album">
-                            Blur
-                        </div>
-                        <div class="card__artist">
-                            Blur
-                        </div>
-                        <div class="card__price">
-                            $8.99
-                        </div>
-                    </div>
-                    <div class="card card--album">
-                        <div class="card__img">
-                            <img src="https://cdn.shopify.com/s/files/1/0096/1884/9839/products/Interpol-Turn-On-The-Bright-Lights-Sister-Ray_480x.jpg?v=1570374761" alt="" width="175" height="175"/>
-                        </div>
-                        <div class="card__album">
-                            Turn On The Bright Lights
-                        </div>
-                        <div class="card__artist">
-                            Interpol
-                        </div>
-                        <div class="card__price">
-                            $21.99
-                        </div>
-                    </div>
-                    <div class="card card--album">
-                        <div class="card__img">
-                            <img src="https://cdn.shopify.com/s/files/1/0096/1884/9839/products/room_480x.jpg?v=1632999315" alt="" width="175" height="175"/>
-                        </div>
-                        <div class="card__album">
-                            Room On Fire
-                        </div>
-                        <div class="card__artist">
-                            The Strokes
-                        </div>
-                        <div class="card__price">
-                            $6.99
-                        </div>
-                    </div>
-                    <div class="card card--album">
-                        <div class="card__img">
-                            <img src="https://cdn.shopify.com/s/files/1/0096/1884/9839/products/Arctic-Monkeys-AM-Sister-Ray_480x.jpg?v=1570377553" alt="" width="175" height="175"/>
-                        </div>
-                        <div class="card__album">
-                            AM
-                        </div>
-                        <div class="card__artist">
-                            Arctic Monkeys
-                        </div>
-                        <div class="card__price">
-                            $25.99
-                        </div>
+                    <div class="section__featured-album">
+                        <img src="https://cdn.shopify.com/s/files/1/0096/1884/9839/products/Arctic-Monkeys-AM-Sister-Ray_480x.jpg?v=1570377553" alt="" width="175" height="175" class="section__featured-album-img"/>
+                        <h3 class="section__featured-album-artist">Arctic Monkeys</h3>
+                        <p class="section__featured-album-title">AM</p>
                     </div>
                 </div>
             </div>
@@ -268,7 +187,7 @@
                 <div class="separator__container">
                     <h2 class="separator__title">Los mejores de la industria</h2>
                 </div>
-                <div class="separator__columns-flex">
+                <div class="separator__columns-flex" data-aos="fade-up">
                     <div class="separator__columns-flex-1">
                         <h3 class="separator__columns-flex-title counter" id="contador" data-max-number="20">0</h3>
                         <p class="separator__columns-flex-paragraph">Empresas confían en nosotros</p>
@@ -323,11 +242,11 @@
                                 <p class="footer__paragraph-1">Recibe descuentos especiales y las ultimas noticias del mundo musical</p>
                                 <form class="form">
                                     <form>
-                                      <div>
-                                        <input type="email" placeholder="Correo" class="button-input" pattern="[0-9+]+"
-                                          title="Ingresar un número de celular" required />
-                                        <button class="button-text">Suscribirse</button>
-                                      </div>
+                                        <div>
+                                            <input type="email" placeholder="Correo" class="button-input" pattern="[0-9+]+"
+                                            title="Ingresar un número de celular" required />
+                                            <button class="button-text">Suscribirse</button>
+                                        </div>
                                     </form>
                             </div>
                         </div>
@@ -370,5 +289,9 @@
     
     <script src="./js/index.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>

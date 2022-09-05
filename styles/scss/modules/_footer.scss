@@ -1,5 +1,6 @@
 .footer {
     box-sizing: border-box;
+    text-align: center;
 
     &__row {
         display: flex;
@@ -25,21 +26,6 @@
         font-size: 1rem;
         padding-top: 1rem;
         padding-bottom: 0.25rem;
-        &-column {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        &-paragraph{
-            padding: 0rem 2rem;
-            color: white;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 1rem;
-            text-align: left;
-            list-style: none;
-        }
 
         &-menu {
             display: flex;
@@ -104,7 +90,7 @@
     }
 
 
-    .footer__paragraph {
+    &__paragraph {
         color: rgb(148, 148, 148);
         font-style: normal;
         font-weight: 400;
@@ -113,20 +99,18 @@
         list-style: none;
         text-decoration: none;
         left: 0px;
-
-        
         
         &:hover {
             color: var(--tertiary-theme-color);
         }
     }
 
-    .footer__paragraph-1 {
+    &__paragraph-1 {
         color: rgb(148, 148, 148);
         font-style: normal;
         font-weight: 400;
         font-size: 1rem;
-        text-align: left;
+        text-align: center;
         list-style: none;
         text-decoration: none;
         left: 0px;
