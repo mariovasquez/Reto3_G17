@@ -475,7 +475,7 @@
   }
 }
 .separator {
-  background-image: url(../../../assets/img/Statistics.jpg);
+  background-image: url "../../../assets/img/Statistics.jpg";
 }
 .separator__container {
   padding: 2rem;
@@ -705,10 +705,10 @@
 
 @media (max-width: 768px) {
   .slider__buttons {
-    scale: 0.9;
+    scale: 0.75;
   }
   .slider__title {
-    font-size: 1.5rem;
+    font-size: 1rem;
     top: 75%;
   }
 }
