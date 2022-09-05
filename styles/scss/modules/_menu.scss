@@ -19,7 +19,7 @@
         align-items: center;
         justify-content: center;
         gap: 2rem;
-        background-image: linear-gradient(var(--reverse-primary-shadow-color), var(--secondary-theme-color));
+        background-image: linear-gradient(var(--tertiary-theme-color), var(--secondary-text-color));
         transform: var(--translate-x-menu);
         transition: transform 0.25s;
     }
@@ -48,10 +48,14 @@
             bottom: -0.25rem;
             width: 0;
             height: 0.0625rem;
-            background-color: var(--primary-button-color);
+            background-color: white;
             transition: width 0.25s ease-in-out;
         }
     }
+}
+
+.nav__icon {
+    color: white;
 }
 
 @media(min-width: 768px){

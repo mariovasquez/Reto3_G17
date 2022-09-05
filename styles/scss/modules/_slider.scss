@@ -65,11 +65,12 @@
 
     .slider{
         &__buttons {
-            display: none;
+            scale: 0.90;
         }
     
         &__title {
-            display: none;
+            font-size: 1.5rem;
+            top: 75%;
         }
     }
 }

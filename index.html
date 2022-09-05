@@ -43,8 +43,8 @@
                 <a href="#">
                     <img src="./assets/svg/Logo_Vao.svg" alt="Concierto" width="100" height="100" class="nav__logo">
                 </a>
-                <a href="#nav" class="nav__action nav__action--menu"><i class="bi bi-list"></i></a>
-                <a href="#close" class="nav__action nav__action--close"><i class="bi bi-x-circle"></i></i></a>
+                <a href="#nav" class="nav__action nav__action--menu"><i class="bi bi-list nav__icon"></i></a>
+                <a href="#close" class="nav__action nav__action--close"><i class="bi bi-x nav__icon"></i></i></a>
                 <ul class="menu menu--header">
                     <li>
                         <a href="#" class="menu__link">Inicio</a>
@@ -259,59 +259,88 @@
         <section class="bestSellers"></section>
     </main>
     <footer class="footer">
-        <div class="footer__row">
-            <div class="footer__column footer__column-left">
-                <figure>
-                    <a href="#">
-                        <img src="./assets/svg/Logo_Vao_Texto.svg" width="96px" alt="logo_discos">
-                    </a>
-                </figure>
-            </div>
-            <div class="footer__column footer__column-middle">
-                <h2>Sobre nosotros</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="footer__column footer__column-right">
-                <h2>Síguenos</h2>
-                <div class="container">
-                    <form class="form">
-                        <div class="form__group">
-                            <input class="form__input" type="email" placeholder="Correo" required>
-                            <button class="button button--primary">Contactar</button>
-                        </div>
-                    </form>
+            <div class="footer__row">
+                <div class="col-lg-3 footer__row-1">
+                    <img src="./assets/svg/Logo_Vao_Texto.svg" alt="">
                 </div>
-                <br>
-                <ul class="menu">
-                    <li class="footer__icon">
-                        <a href="#" class="footer__link-icon">
-                            <i class="bi bi-facebook footer__icon-bi"></i>
-                        </a>
-                    </li>
-                    <li class="footer__icon">
-                        <a href="#" class="footer__link-icon">
-                            <i class="bi bi-instagram footer__icon-bi"></i>
-                        </a>
-                    </li>
-                    <li class="footer__icon">
-                        <a href="#" class="footer__link-icon">
-                            <i class="bi bi-twitter footer__icon-bi"></i>
-                        </a>
-                    </li>
-                    <li class="footer__icon">
-                        <a href="#" class="footer__link-icon">
-                            <i class="bi bi-youtube footer__icon-bi"></i>
-                        </a>
-                    </li>
-                </ul>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-3 ps-lg-5">
+                            <div class="mt-4">
+                                <h5 class="f-17 text-white fw-normal">Páginas</h5>
+                                <ul class="list-unstyled footer-link mt-3 mb-0">
+                                    <li><a href="" class="footer__paragraph">Inicio</a></li>
+                                    <li><a href="" class="footer__paragraph">Tienda</a></li>
+                                    <li><a href="" class="footer__paragraph">Planes</a></li>
+                                    <li><a href="" class="footer__paragraph">Nosotros</a></li>
+                                    <li><a href="" class="footer__paragraph">Contacto</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <div class="mt-4 ps-0 ps-lg-5">
+                                <h5 class="f-17 text-white fw-normal">Tendencias</h5>
+                                <ul class="list-unstyled footer-link mt-3 mb-0">
+                                    <li><a href="" class="footer__paragraph">Imagine Dragons</a></li>
+                                    <li><a href="" class="footer__paragraph">Maroon 5</a></li>
+                                    <li><a href="" class="footer__paragraph">Artic Monkeys</a></li>
+                                    <li><a href="" class="footer__paragraph">Red Hot CHilli</a></li>
+                                    <li><a href="" class="footer__paragraph">Chainsmokers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="mt-4 ps-0 ps-lg-5">
+                                <h5 class="f-17 text-white fw-normal">Suscríbete</h5>
+                                <p class="footer__paragraph-1">Recibe descuentos especiales y las ultimas noticias del mundo musical</p>
+                                <form class="form">
+                                    <form>
+                                      <div>
+                                        <input type="email" placeholder="Correo" class="button-input" pattern="[0-9+]+"
+                                          title="Ingresar un número de celular" required />
+                                        <button class="button-text">Suscribirse</button>
+                                      </div>
+                                    </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
-        </div>
-        <div class="sub__footer">
-            <h2 class="footer__subtitle">Copyright &copy; 2022. Todos los derechos reservados. <a href="#" target="_blank" class="footer__subtitle-link" rel="noopener noreferrer">Tienda de Discos</a>
-            </h2>
-        </div>
+            <div class="footer__sub">
+                    <ul class="footer__sub-menu">
+                        <div class="icon-container">
+                        <li class="footer__icon">
+                            <a href="#" class="footer__link-icon">
+                                <i class="bi bi-facebook footer__icon-bi"></i>
+                            </a>
+                        </li>
+                    </div>
+                        <li class="footer__icon">
+                            <a href="#" class="footer__link-icon">
+                                <i class="bi bi-instagram footer__icon-bi"></i>
+                            </a>
+                        </li>
+                        <li class="footer__icon">
+                            <a href="#" class="footer__link-icon">
+                                <i class="bi bi-twitter footer__icon-bi"></i>
+                            </a>
+                        </li>
+                        <li class="footer__icon">
+                            <a href="#" class="footer__link-icon">
+                                <i class="bi bi-youtube footer__icon-bi"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+
+            </div>
+
     </footer>
+    
     <script src="./js/index.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
