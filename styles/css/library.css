@@ -195,19 +195,24 @@
   .button {
     font-size: 1.125rem;
   }
+  .button-text {
+    transition: background-color 0.35s;
+    transition: color 0.35s;
+    transition: border 0.35s;
+  }
   .button-text--buy {
     color: var(--tertiary-text-color);
     font-weight: 600;
     visibility: hidden;
   }
   .button-text--buy:hover {
-    background: var(--quaternary-theme-color);
+    background-color: var(--quaternary-theme-color);
     color: var(--tertiary-text-color);
     border: 1px solid var(--primary-text-color);
   }
   .button-text--buy--enable {
     visibility: visible;
-    transition: all 1s;
+    transition: all 0.25s;
   }
 }
 .card {
@@ -708,7 +713,7 @@
   transition: box-shadow 0.25s;
 }
 .section__featured-album-img--hover {
-  box-shadow: 0 0 0.25rem 0.2rem var(--primary-highlight-color);
+  box-shadow: 0 0 0.0625rem 0.25rem var(--primary-highlight-color);
 }
 .section__featured-album-artist {
   margin: 0;
@@ -817,6 +822,7 @@
   color: white;
   font-size: 1.25rem;
   border: 1px solid var(--tertiary-theme-color);
+  transition: all 0.35s;
 }
 .slider__button-text:hover {
   background: white;
@@ -834,6 +840,7 @@
   font-weight: 500;
   line-height: 22px;
   text-align: center;
+  transition: all 0.35s;
 }
 .slider__button-icon:hover {
   background: var(--tertiary-theme-color);

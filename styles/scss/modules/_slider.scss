@@ -32,6 +32,7 @@
             color: white;
             font-size: 1.25rem;
             border: 1px solid var(--tertiary-theme-color);
+            transition: all 0.35s;
     
             &:hover {
                 background: white;
@@ -51,6 +52,7 @@
             font-weight: 500;
             line-height: 22px;
             text-align:center;
+            transition: all 0.35s;
     
             &:hover {
                 background: var(--tertiary-theme-color);

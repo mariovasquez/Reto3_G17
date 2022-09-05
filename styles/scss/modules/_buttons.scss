@@ -85,6 +85,9 @@
         font-size: 1.125rem;
 
         &-text{
+            transition: background-color 0.35s;
+            transition: color 0.35s;
+            transition: border 0.35s;
 
             &--buy{
                 color: var(--tertiary-text-color);
@@ -92,14 +95,14 @@
                 visibility: hidden;
     
                 &:hover {
-                    background: var(--quaternary-theme-color);
+                    background-color: var(--quaternary-theme-color);
                     color: var(--tertiary-text-color);
                     border: 1px solid var(--primary-text-color);
                 }
     
                 &--enable{
                     visibility: visible;
-                    transition: all 1s;
+                    transition: all 0.25s;
                 }
             }
         }
