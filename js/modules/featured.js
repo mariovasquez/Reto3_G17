@@ -17,8 +17,6 @@ const featured = () => {
         newReleasesAlbums.classList.add('section__featured-albums--disabled');
         popularAlbums.classList.remove('section__featured-albums--disabled');
     });
-    for (const menuLink of menuLinks) menuLink.addEventListener('click', closeMenu);
-
 };
-  
+
 export default featured;
