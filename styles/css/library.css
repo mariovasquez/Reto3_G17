@@ -494,7 +494,7 @@
   transform: scale(0);
 }
 
-@media (min-width: 900px) {
+@media (min-width: 940px) {
   .nav {
     --scale-menu: scale(0);
     --translate-x-menu: translateX(0);
@@ -636,6 +636,9 @@
     text-shadow: none;
   }
 }
+.section {
+  overflow: hidden;
+}
 .section--about {
   display: flex;
   flex-direction: column;
@@ -738,7 +741,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1024px;
+  max-width: var(--max-width-container);
 }
 .container--submenu {
   display: flex;
