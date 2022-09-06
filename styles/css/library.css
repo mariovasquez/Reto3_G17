@@ -702,6 +702,7 @@
   flex-direction: column;
   text-decoration: none;
   color: var(--primary-text-color);
+  align-items: center;
   gap: 0.625rem;
 }
 .section__featured-album-link:hover {
