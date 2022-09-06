@@ -150,6 +150,36 @@
         display: flex;
         flex-direction: column;
     }
+
+    &__news{
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 3rem;
+
+        &-title{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 2rem;
+        }
+    }
+    
+    &__new{
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        justify-content: center;
+        max-width: 450px;
+        padding: 1.5rem 0;
+        gap: 0.125rem;
+
+        &-img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 }
 
 @media(min-width: 850px){
