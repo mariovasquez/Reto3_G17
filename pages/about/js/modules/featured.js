@@ -1,7 +1,7 @@
 const featured = () => {
     const newReleases = document.getElementById('newReleases');
     const popular = document.getElementById('popular');
-    const newRealesAlbums = document.getElementById('newReleasesAlbums');
+    const newReleasesAlbums = document.getElementById('newReleasesAlbums');
     const popularAlbums = document.getElementById('popularAlbums');
 
     

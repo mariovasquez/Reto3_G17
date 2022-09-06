@@ -56,7 +56,6 @@
             display: flex;
             justify-content: space-between;
             flex-direction: column;
-            gap: 0.5rem;
             padding: 2rem 0;
 
             &--disabled{
@@ -73,6 +72,7 @@
                 text-align: center;
                 gap: 0.5rem;
                 padding: 1rem 0rem;
+                max-width: 240px;
             }
 
             &-link{
@@ -147,8 +147,16 @@
     }
 
     &--featured{
+        max-width: calc(var(--max-width-container) + 4rem);
         display: flex;
         flex-direction: column;
+
+        &-albums{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
     }
 
     &__news{
@@ -223,6 +231,5 @@
 @media(min-width: 1120px){
     .section__featured-albums{
         flex-direction: row;
-        gap: 2rem;
     }
 }

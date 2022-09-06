@@ -63,6 +63,35 @@
     }
 }
 
+.arrow{
+    &__left{
+        font-size: 2rem;
+        color: var(--primary-highlight-color);
+        display: contents;
+        cursor: pointer;
+        transition: color 0.25s;
+
+        &:hover{
+            color: var(--primary-shadow-color);
+        }
+    }
+
+    &__right{
+        font-size: 2rem;
+        color: var(--primary-highlight-color);
+        display: contents;
+        cursor: pointer;
+        transition: color 0.25s;
+
+        &:hover{
+            color: var(--primary-shadow-color);
+        }
+    }
+    &--disabled{
+        display: none;
+    }
+}
+
 @media (max-width: 940px) {
 
     .slider{
@@ -96,6 +125,16 @@
             &:hover {
                 scale: 0.9;
             }
+        }
+    }
+
+    .arrow{
+        &__left{
+            display: none;
+        }
+    
+        &__right{
+            display: none;
         }
     }
 }
