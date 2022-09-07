@@ -57,6 +57,7 @@
             justify-content: space-between;
             flex-direction: column;
             padding: 2rem 0;
+            gap: 2.5rem;
 
             &--disabled{
                 display: none;
@@ -73,6 +74,11 @@
                 gap: 0.5rem;
                 padding: 1rem 0rem;
                 max-width: 240px;
+                transition: transform 0.25s ease-in-out;
+
+                &:hover{
+                    transform: scale(1.1);
+                }
             }
 
             &-link{
@@ -95,7 +101,6 @@
 
                 &--hover{
                     box-shadow: 0 0 0.0625rem 0.25rem var(--primary-highlight-color);
-                    transform: scale(1.075);
                 }
             }
             &-artist{
@@ -157,6 +162,7 @@
             flex-direction: row;
             align-items: center;
             justify-content: center;
+            gap: 3rem;
         }
     }
 
@@ -211,7 +217,7 @@
                 }
 
                 &-container{
-                    padding: 2rem 2rem;
+                    padding: 2rem 0;
                 }
             }
         }
