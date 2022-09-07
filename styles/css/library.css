@@ -750,10 +750,11 @@
 .section__featured-album-img {
   border-radius: 10%;
   box-shadow: 0 0 0.25rem 0 var(--primary-shadow-color);
-  transition: box-shadow 0.25s;
+  transition: all 0.25s;
 }
 .section__featured-album-img--hover {
   box-shadow: 0 0 0.0625rem 0.25rem var(--primary-highlight-color);
+  transform: scale(1.075);
 }
 .section__featured-album-artist {
   margin: 0;
